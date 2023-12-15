@@ -8,6 +8,14 @@
 4. install appium library robot framework
 5. download apk mau-kerja and put in folder data 
 6. after put in apk on folder data , go to data.py and adjust path apk '/Users/ikhwannurhasyim/Documents/Automation/maukerja-mobile/data/mau-kerja.apk'
+
+
+
+
+
+
+
+
 ````
 ## How To Install
 
