@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.6 on darwin)" generated="20231215 21:17:56.005" rpa="false" schemaversion="4">
+<suite id="s1" name="Mau-Kerja" source="/Users/ikhwannurhasyim/Documents/Automation/maukerja-mobile/mau-kerja.robot">
+<test id="s1-t1" name="User should be able to see homepage maukerja" line="8">
+<kw name="Open The Application Mau Kerja" library="general">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${appium_server}</arg>
+<arg>platformName=${android_plat_name}</arg>
+<arg>app=${apk}</arg>
+<arg>appPackage=${app_package}</arg>
+<arg>appActivity=${app_activity}</arg>
+<arg>deviceName=${device_name}</arg>
+<arg>udid=${udid}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" starttime="20231215 21:17:56.090" endtime="20231215 21:18:02.654"/>
+</kw>
+<status status="PASS" starttime="20231215 21:17:56.090" endtime="20231215 21:18:02.654"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${btn_company}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231215 21:18:04.607" level="INFO">xpath criteria: //android.view.View[contains(@content-desc ,'Company')]</msg>
+<status status="PASS" starttime="20231215 21:18:02.654" endtime="20231215 21:18:04.607"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${btn_myjob}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231215 21:18:04.642" level="INFO">xpath criteria: //android.view.View[contains(@content-desc ,'My Jobs')]</msg>
+<status status="PASS" starttime="20231215 21:18:04.607" endtime="20231215 21:18:04.642"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${btn_profile}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231215 21:18:04.681" level="INFO">xpath criteria: //android.view.View[contains(@content-desc ,'Profile')]</msg>
+<status status="PASS" starttime="20231215 21:18:04.642" endtime="20231215 21:18:04.682"/>
+</kw>
+<kw name="Close All Applications" library="AppiumLibrary">
+<doc>Closes all open applications.</doc>
+<status status="PASS" starttime="20231215 21:18:04.682" endtime="20231215 21:18:05.162"/>
+</kw>
+<status status="PASS" starttime="20231215 21:17:56.090" endtime="20231215 21:18:05.163"/>
+</test>
+<test id="s1-t2" name="User should be able to click Myjobs" line="15">
+<kw name="Open The Application Mau Kerja" library="general">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${appium_server}</arg>
+<arg>platformName=${android_plat_name}</arg>
+<arg>app=${apk}</arg>
+<arg>appPackage=${app_package}</arg>
+<arg>appActivity=${app_activity}</arg>
+<arg>deviceName=${device_name}</arg>
+<arg>udid=${udid}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" starttime="20231215 21:18:05.164" endtime="20231215 21:18:10.624"/>
+</kw>
+<status status="PASS" starttime="20231215 21:18:05.163" endtime="20231215 21:18:10.624"/>
+</kw>
+<kw name="Click My Jobs" library="home">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${btn_myjob}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231215 21:18:12.503" level="INFO">xpath criteria: //android.view.View[contains(@content-desc ,'My Jobs')]</msg>
+<status status="PASS" starttime="20231215 21:18:10.625" endtime="20231215 21:18:12.503"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${btn_myjob}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20231215 21:18:12.506" level="INFO">Clicking element '//android.view.View[contains(@content-desc ,'My Jobs')]'.</msg>
+<msg timestamp="20231215 21:18:13.359" level="INFO">xpath criteria: //android.view.View[contains(@content-desc ,'My Jobs')]</msg>
+<status status="PASS" starttime="20231215 21:18:12.504" endtime="20231215 21:18:13.360"/>
+</kw>
+<status status="PASS" starttime="20231215 21:18:10.625" endtime="20231215 21:18:13.360"/>
+</kw>
+<kw name="Close All Applications" library="AppiumLibrary">
+<doc>Closes all open applications.</doc>
+<status status="PASS" starttime="20231215 21:18:13.361" endtime="20231215 21:18:13.727"/>
+</kw>
+<status status="PASS" starttime="20231215 21:18:05.163" endtime="20231215 21:18:13.727"/>
+</test>
+<test id="s1-t3" name="User should be able to click Company" line="20">
+<kw name="Open The Application Mau Kerja" library="general">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${appium_server}</arg>
+<arg>platformName=${android_plat_name}</arg>
+<arg>app=${apk}</arg>
+<arg>appPackage=${app_package}</arg>
+<arg>appActivity=${app_activity}</arg>
+<arg>deviceName=${device_name}</arg>
+<arg>udid=${udid}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" starttime="20231215 21:18:13.729" endtime="20231215 21:18:19.532"/>
+</kw>
+<status status="PASS" starttime="20231215 21:18:13.728" endtime="20231215 21:18:19.533"/>
+</kw>
+<kw name="Click Company" library="home">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${btn_company}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231215 21:18:21.534" level="INFO">xpath criteria: //android.view.View[contains(@content-desc ,'Company')]</msg>
+<status status="PASS" starttime="20231215 21:18:19.534" endtime="20231215 21:18:21.534"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${btn_company}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20231215 21:18:21.539" level="INFO">Clicking element '//android.view.View[contains(@content-desc ,'Company')]'.</msg>
+<msg timestamp="20231215 21:18:22.700" level="INFO">xpath criteria: //android.view.View[contains(@content-desc ,'Company')]</msg>
+<status status="PASS" starttime="20231215 21:18:21.535" endtime="20231215 21:18:22.701"/>
+</kw>
+<status status="PASS" starttime="20231215 21:18:19.533" endtime="20231215 21:18:22.701"/>
+</kw>
+<kw name="Close All Applications" library="AppiumLibrary">
+<doc>Closes all open applications.</doc>
+<status status="PASS" starttime="20231215 21:18:22.702" endtime="20231215 21:18:22.995"/>
+</kw>
+<status status="PASS" starttime="20231215 21:18:13.728" endtime="20231215 21:18:22.995"/>
+</test>
+<test id="s1-t4" name="User should be able to click Profile" line="25">
+<kw name="Open The Application Mau Kerja" library="general">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${appium_server}</arg>
+<arg>platformName=${android_plat_name}</arg>
+<arg>app=${apk}</arg>
+<arg>appPackage=${app_package}</arg>
+<arg>appActivity=${app_activity}</arg>
+<arg>deviceName=${device_name}</arg>
+<arg>udid=${udid}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" starttime="20231215 21:18:22.996" endtime="20231215 21:18:28.454"/>
+</kw>
+<status status="PASS" starttime="20231215 21:18:22.996" endtime="20231215 21:18:28.456"/>
+</kw>
+<kw name="Click Profile" library="home">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${btn_profile}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231215 21:18:30.450" level="INFO">xpath criteria: //android.view.View[contains(@content-desc ,'Profile')]</msg>
+<status status="PASS" starttime="20231215 21:18:28.457" endtime="20231215 21:18:30.450"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${btn_profile}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20231215 21:18:30.452" level="INFO">Clicking element '//android.view.View[contains(@content-desc ,'Profile')]'.</msg>
+<msg timestamp="20231215 21:18:31.292" level="INFO">xpath criteria: //android.view.View[contains(@content-desc ,'Profile')]</msg>
+<status status="PASS" starttime="20231215 21:18:30.450" endtime="20231215 21:18:31.292"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${btn_login}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231215 21:18:31.335" level="INFO">xpath criteria: //android.widget.Button[@content-desc='Login']</msg>
+<status status="PASS" starttime="20231215 21:18:31.292" endtime="20231215 21:18:31.335"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${btn_register}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231215 21:18:31.367" level="INFO">xpath criteria: //android.widget.Button[@content-desc='Register']</msg>
+<status status="PASS" starttime="20231215 21:18:31.335" endtime="20231215 21:18:31.368"/>
+</kw>
+<status status="PASS" starttime="20231215 21:18:28.456" endtime="20231215 21:18:31.368"/>
+</kw>
+<kw name="Close All Applications" library="AppiumLibrary">
+<doc>Closes all open applications.</doc>
+<status status="PASS" starttime="20231215 21:18:31.368" endtime="20231215 21:18:31.730"/>
+</kw>
+<status status="PASS" starttime="20231215 21:18:22.995" endtime="20231215 21:18:31.731"/>
+</test>
+<test id="s1-t5" name="User should be able to login" line="30">
+<kw name="Open The Application Mau Kerja" library="general">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${appium_server}</arg>
+<arg>platformName=${android_plat_name}</arg>
+<arg>app=${apk}</arg>
+<arg>appPackage=${app_package}</arg>
+<arg>appActivity=${app_activity}</arg>
+<arg>deviceName=${device_name}</arg>
+<arg>udid=${udid}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" starttime="20231215 21:18:31.731" endtime="20231215 21:18:37.286"/>
+</kw>
+<status status="PASS" starttime="20231215 21:18:31.731" endtime="20231215 21:18:37.287"/>
+</kw>
+<kw name="Click Profile" library="home">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${btn_profile}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231215 21:18:40.006" level="INFO">xpath criteria: //android.view.View[contains(@content-desc ,'Profile')]</msg>
+<status status="PASS" starttime="20231215 21:18:37.288" endtime="20231215 21:18:40.006"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${btn_profile}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20231215 21:18:40.010" level="INFO">Clicking element '//android.view.View[contains(@content-desc ,'Profile')]'.</msg>
+<msg timestamp="20231215 21:18:40.838" level="INFO">xpath criteria: //android.view.View[contains(@content-desc ,'Profile')]</msg>
+<status status="PASS" starttime="20231215 21:18:40.006" endtime="20231215 21:18:40.838"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${btn_login}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231215 21:18:40.879" level="INFO">xpath criteria: //android.widget.Button[@content-desc='Login']</msg>
+<status status="PASS" starttime="20231215 21:18:40.839" endtime="20231215 21:18:40.879"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${btn_register}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231215 21:18:40.909" level="INFO">xpath criteria: //android.widget.Button[@content-desc='Register']</msg>
+<status status="PASS" starttime="20231215 21:18:40.879" endtime="20231215 21:18:40.909"/>
+</kw>
+<status status="PASS" starttime="20231215 21:18:37.287" endtime="20231215 21:18:40.909"/>
+</kw>
+<kw name="Click Button Login" library="home">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${btn_login}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20231215 21:18:40.913" level="INFO">Clicking element '//android.widget.Button[@content-desc='Login']'.</msg>
+<msg timestamp="20231215 21:18:41.530" level="INFO">xpath criteria: //android.widget.Button[@content-desc='Login']</msg>
+<status status="PASS" starttime="20231215 21:18:40.910" endtime="20231215 21:18:41.530"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${txt_login}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231215 21:18:41.577" level="INFO">xpath criteria: //android.view.View[@content-desc='Login to Maukerja']</msg>
+<status status="PASS" starttime="20231215 21:18:41.530" endtime="20231215 21:18:41.577"/>
+</kw>
+<status status="PASS" starttime="20231215 21:18:40.910" endtime="20231215 21:18:41.577"/>
+</kw>
+<kw name="Input Email or Phone" library="home">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${inpt_email_phone}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231215 21:18:41.609" level="INFO">xpath criteria: //*/android.view.View[2]/android.widget.EditText[1]</msg>
+<status status="PASS" starttime="20231215 21:18:41.578" endtime="20231215 21:18:41.609"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${inpt_email_phone}</arg>
+<arg>wann@gmail.com</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20231215 21:18:41.611" level="INFO">Typing text 'wann@gmail.com' into text field '//*/android.view.View[2]/android.widget.EditText[1]'</msg>
+<msg timestamp="20231215 21:18:41.645" level="INFO">xpath criteria: //*/android.view.View[2]/android.widget.EditText[1]</msg>
+<status status="PASS" starttime="20231215 21:18:41.609" endtime="20231215 21:18:41.645"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231215 21:18:46.647" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20231215 21:18:41.645" endtime="20231215 21:18:46.647"/>
+</kw>
+<status status="PASS" starttime="20231215 21:18:41.577" endtime="20231215 21:18:46.647"/>
+</kw>
+<kw name="Input Password" library="home">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${inpt_pass}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231215 21:18:46.711" level="INFO">xpath criteria: //*/android.view.View[2]/android.widget.EditText[2]</msg>
+<status status="PASS" starttime="20231215 21:18:46.648" endtime="20231215 21:18:46.712"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${inpt_pass}</arg>
+<arg>12345678</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20231215 21:18:46.713" level="INFO">Typing text '12345678' into text field '//*/android.view.View[2]/android.widget.EditText[2]'</msg>
+<msg timestamp="20231215 21:18:46.755" level="INFO">xpath criteria: //*/android.view.View[2]/android.widget.EditText[2]</msg>
+<status status="PASS" starttime="20231215 21:18:46.712" endtime="20231215 21:18:46.755"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231215 21:18:51.757" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20231215 21:18:46.755" endtime="20231215 21:18:51.757"/>
+</kw>
+<status status="PASS" starttime="20231215 21:18:46.648" endtime="20231215 21:18:51.757"/>
+</kw>
+<kw name="Click Submit Login" library="home">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${submit_login}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231215 21:18:51.810" level="INFO">xpath criteria: //android.widget.Button[@content-desc='Login']</msg>
+<status status="PASS" starttime="20231215 21:18:51.757" endtime="20231215 21:18:51.810"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${submit_login}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20231215 21:18:51.812" level="INFO">Clicking element '//android.widget.Button[@content-desc='Login']'.</msg>
+<msg timestamp="20231215 21:18:51.883" level="INFO">xpath criteria: //android.widget.Button[@content-desc='Login']</msg>
+<status status="PASS" starttime="20231215 21:18:51.810" endtime="20231215 21:18:51.883"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231215 21:18:54.886" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231215 21:18:51.883" endtime="20231215 21:18:54.886"/>
+</kw>
+<status status="PASS" starttime="20231215 21:18:51.757" endtime="20231215 21:18:54.886"/>
+</kw>
+<kw name="Close All Applications" library="AppiumLibrary">
+<doc>Closes all open applications.</doc>
+<status status="PASS" starttime="20231215 21:18:54.887" endtime="20231215 21:18:55.285"/>
+</kw>
+<status status="PASS" starttime="20231215 21:18:31.731" endtime="20231215 21:18:55.285"/>
+</test>
+<test id="s1-t6" name="User should be able to login with google" line="39">
+<kw name="Open The Application Mau Kerja" library="general">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${appium_server}</arg>
+<arg>platformName=${android_plat_name}</arg>
+<arg>app=${apk}</arg>
+<arg>appPackage=${app_package}</arg>
+<arg>appActivity=${app_activity}</arg>
+<arg>deviceName=${device_name}</arg>
+<arg>udid=${udid}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" starttime="20231215 21:18:55.287" endtime="20231215 21:19:00.711"/>
+</kw>
+<status status="PASS" starttime="20231215 21:18:55.286" endtime="20231215 21:19:00.712"/>
+</kw>
+<kw name="Click Profile" library="home">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${btn_profile}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231215 21:19:02.691" level="INFO">xpath criteria: //android.view.View[contains(@content-desc ,'Profile')]</msg>
+<status status="PASS" starttime="20231215 21:19:00.714" endtime="20231215 21:19:02.691"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${btn_profile}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20231215 21:19:02.693" level="INFO">Clicking element '//android.view.View[contains(@content-desc ,'Profile')]'.</msg>
+<msg timestamp="20231215 21:19:03.540" level="INFO">xpath criteria: //android.view.View[contains(@content-desc ,'Profile')]</msg>
+<status status="PASS" starttime="20231215 21:19:02.691" endtime="20231215 21:19:03.540"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${btn_login}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231215 21:19:03.583" level="INFO">xpath criteria: //android.widget.Button[@content-desc='Login']</msg>
+<status status="PASS" starttime="20231215 21:19:03.540" endtime="20231215 21:19:03.583"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${btn_register}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231215 21:19:03.619" level="INFO">xpath criteria: //android.widget.Button[@content-desc='Register']</msg>
+<status status="PASS" starttime="20231215 21:19:03.584" endtime="20231215 21:19:03.619"/>
+</kw>
+<status status="PASS" starttime="20231215 21:19:00.713" endtime="20231215 21:19:03.619"/>
+</kw>
+<kw name="Click Button Login" library="home">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${btn_login}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20231215 21:19:03.624" level="INFO">Clicking element '//android.widget.Button[@content-desc='Login']'.</msg>
+<msg timestamp="20231215 21:19:04.725" level="INFO">xpath criteria: //android.widget.Button[@content-desc='Login']</msg>
+<status status="PASS" starttime="20231215 21:19:03.620" endtime="20231215 21:19:04.726"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${txt_login}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231215 21:19:04.804" level="INFO">xpath criteria: //android.view.View[@content-desc='Login to Maukerja']</msg>
+<status status="PASS" starttime="20231215 21:19:04.726" endtime="20231215 21:19:04.804"/>
+</kw>
+<status status="PASS" starttime="20231215 21:19:03.620" endtime="20231215 21:19:04.804"/>
+</kw>
+<kw name="Click Login Google" library="home">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${txt_login}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231215 21:19:04.849" level="INFO">xpath criteria: //android.view.View[@content-desc='Login to Maukerja']</msg>
+<status status="PASS" starttime="20231215 21:19:04.806" endtime="20231215 21:19:04.849"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${login_google}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20231215 21:19:04.850" level="INFO">Clicking element '//android.widget.ImageView[@content-desc='Google']'.</msg>
+<msg timestamp="20231215 21:19:04.926" level="INFO">xpath criteria: //android.widget.ImageView[@content-desc='Google']</msg>
+<status status="PASS" starttime="20231215 21:19:04.849" endtime="20231215 21:19:04.926"/>
+</kw>
+<status status="PASS" starttime="20231215 21:19:04.805" endtime="20231215 21:19:04.926"/>
+</kw>
+<kw name="Close All Applications" library="AppiumLibrary">
+<doc>Closes all open applications.</doc>
+<status status="PASS" starttime="20231215 21:19:04.927" endtime="20231215 21:19:05.364"/>
+</kw>
+<status status="PASS" starttime="20231215 21:18:55.286" endtime="20231215 21:19:05.364"/>
+</test>
+<test id="s1-t7" name="User should be able to login with facebook" line="46">
+<kw name="Open The Application Mau Kerja" library="general">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${appium_server}</arg>
+<arg>platformName=${android_plat_name}</arg>
+<arg>app=${apk}</arg>
+<arg>appPackage=${app_package}</arg>
+<arg>appActivity=${app_activity}</arg>
+<arg>deviceName=${device_name}</arg>
+<arg>udid=${udid}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" starttime="20231215 21:19:05.365" endtime="20231215 21:19:11.283"/>
+</kw>
+<status status="PASS" starttime="20231215 21:19:05.365" endtime="20231215 21:19:11.284"/>
+</kw>
+<kw name="Click Profile" library="home">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${btn_profile}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231215 21:19:13.248" level="INFO">xpath criteria: //android.view.View[contains(@content-desc ,'Profile')]</msg>
+<status status="PASS" starttime="20231215 21:19:11.285" endtime="20231215 21:19:13.249"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${btn_profile}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20231215 21:19:13.251" level="INFO">Clicking element '//android.view.View[contains(@content-desc ,'Profile')]'.</msg>
+<msg timestamp="20231215 21:19:14.085" level="INFO">xpath criteria: //android.view.View[contains(@content-desc ,'Profile')]</msg>
+<status status="PASS" starttime="20231215 21:19:13.249" endtime="20231215 21:19:14.085"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${btn_login}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231215 21:19:14.129" level="INFO">xpath criteria: //android.widget.Button[@content-desc='Login']</msg>
+<status status="PASS" starttime="20231215 21:19:14.085" endtime="20231215 21:19:14.129"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${btn_register}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231215 21:19:14.154" level="INFO">xpath criteria: //android.widget.Button[@content-desc='Register']</msg>
+<status status="PASS" starttime="20231215 21:19:14.129" endtime="20231215 21:19:14.155"/>
+</kw>
+<status status="PASS" starttime="20231215 21:19:11.284" endtime="20231215 21:19:14.155"/>
+</kw>
+<kw name="Click Button Login" library="home">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${btn_login}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20231215 21:19:14.157" level="INFO">Clicking element '//android.widget.Button[@content-desc='Login']'.</msg>
+<msg timestamp="20231215 21:19:14.215" level="INFO">xpath criteria: //android.widget.Button[@content-desc='Login']</msg>
+<status status="PASS" starttime="20231215 21:19:14.155" endtime="20231215 21:19:14.215"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${txt_login}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231215 21:19:14.782" level="INFO">xpath criteria: //android.view.View[@content-desc='Login to Maukerja']</msg>
+<status status="PASS" starttime="20231215 21:19:14.216" endtime="20231215 21:19:14.782"/>
+</kw>
+<status status="PASS" starttime="20231215 21:19:14.155" endtime="20231215 21:19:14.782"/>
+</kw>
+<kw name="Click Login Facebook" library="home">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${txt_login}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231215 21:19:15.340" level="INFO">xpath criteria: //android.view.View[@content-desc='Login to Maukerja']</msg>
+<status status="PASS" starttime="20231215 21:19:14.783" endtime="20231215 21:19:15.340"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${login_fb}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20231215 21:19:15.342" level="INFO">Clicking element '//android.widget.ImageView[@content-desc='Facebook']'.</msg>
+<msg timestamp="20231215 21:19:15.432" level="INFO">xpath criteria: //android.widget.ImageView[@content-desc='Facebook']</msg>
+<status status="PASS" starttime="20231215 21:19:15.340" endtime="20231215 21:19:15.432"/>
+</kw>
+<status status="PASS" starttime="20231215 21:19:14.783" endtime="20231215 21:19:15.432"/>
+</kw>
+<kw name="Close All Applications" library="AppiumLibrary">
+<doc>Closes all open applications.</doc>
+<status status="PASS" starttime="20231215 21:19:15.432" endtime="20231215 21:19:15.834"/>
+</kw>
+<status status="PASS" starttime="20231215 21:19:05.365" endtime="20231215 21:19:15.834"/>
+</test>
+<test id="s1-t8" name="User should be able to Register" line="53">
+<kw name="Open The Application Mau Kerja" library="general">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${appium_server}</arg>
+<arg>platformName=${android_plat_name}</arg>
+<arg>app=${apk}</arg>
+<arg>appPackage=${app_package}</arg>
+<arg>appActivity=${app_activity}</arg>
+<arg>deviceName=${device_name}</arg>
+<arg>udid=${udid}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" starttime="20231215 21:19:15.835" endtime="20231215 21:19:21.883"/>
+</kw>
+<status status="PASS" starttime="20231215 21:19:15.835" endtime="20231215 21:19:21.883"/>
+</kw>
+<kw name="Click Profile" library="home">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${btn_profile}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231215 21:19:23.855" level="INFO">xpath criteria: //android.view.View[contains(@content-desc ,'Profile')]</msg>
+<status status="PASS" starttime="20231215 21:19:21.884" endtime="20231215 21:19:23.855"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${btn_profile}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20231215 21:19:23.858" level="INFO">Clicking element '//android.view.View[contains(@content-desc ,'Profile')]'.</msg>
+<msg timestamp="20231215 21:19:24.707" level="INFO">xpath criteria: //android.view.View[contains(@content-desc ,'Profile')]</msg>
+<status status="PASS" starttime="20231215 21:19:23.855" endtime="20231215 21:19:24.707"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${btn_login}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231215 21:19:24.752" level="INFO">xpath criteria: //android.widget.Button[@content-desc='Login']</msg>
+<status status="PASS" starttime="20231215 21:19:24.708" endtime="20231215 21:19:24.752"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${btn_register}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231215 21:19:24.783" level="INFO">xpath criteria: //android.widget.Button[@content-desc='Register']</msg>
+<status status="PASS" starttime="20231215 21:19:24.752" endtime="20231215 21:19:24.783"/>
+</kw>
+<status status="PASS" starttime="20231215 21:19:21.884" endtime="20231215 21:19:24.783"/>
+</kw>
+<kw name="Click Button Register" library="home">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${btn_register}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20231215 21:19:24.785" level="INFO">Clicking element '//android.widget.Button[@content-desc='Register']'.</msg>
+<msg timestamp="20231215 21:19:25.947" level="INFO">xpath criteria: //android.widget.Button[@content-desc='Register']</msg>
+<status status="PASS" starttime="20231215 21:19:24.783" endtime="20231215 21:19:25.947"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${txt_register}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231215 21:19:26.031" level="INFO">xpath criteria: //android.view.View[contains(@content-desc ,'Register to Maukerja')]</msg>
+<status status="PASS" starttime="20231215 21:19:25.949" endtime="20231215 21:19:26.031"/>
+</kw>
+<status status="PASS" starttime="20231215 21:19:24.783" endtime="20231215 21:19:26.031"/>
+</kw>
+<kw name="Input Data Register" library="home">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${txt_register}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231215 21:19:26.067" level="INFO">xpath criteria: //android.view.View[contains(@content-desc ,'Register to Maukerja')]</msg>
+<status status="PASS" starttime="20231215 21:19:26.032" endtime="20231215 21:19:26.067"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${inpt_name1}</arg>
+<arg>ikhwann</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20231215 21:19:26.068" level="INFO">Typing text 'ikhwann' into text field '//*/android.widget.EditText[1]'</msg>
+<msg timestamp="20231215 21:19:26.107" level="INFO">xpath criteria: //*/android.widget.EditText[1]</msg>
+<status status="PASS" starttime="20231215 21:19:26.067" endtime="20231215 21:19:26.107"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${inpt_phone1}</arg>
+<arg>112458192</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20231215 21:19:26.109" level="INFO">Typing text '112458192' into text field '//*/android.widget.EditText[2]'</msg>
+<msg timestamp="20231215 21:19:26.134" level="INFO">xpath criteria: //*/android.widget.EditText[2]</msg>
+<status status="PASS" starttime="20231215 21:19:26.107" endtime="20231215 21:19:26.134"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${inpt_email1}</arg>
+<arg>ikhwann@gmail.com</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20231215 21:19:26.137" level="INFO">Typing text 'ikhwann@gmail.com' into text field '//*/android.widget.EditText[3]'</msg>
+<msg timestamp="20231215 21:19:26.160" level="INFO">xpath criteria: //*/android.widget.EditText[3]</msg>
+<status status="PASS" starttime="20231215 21:19:26.135" endtime="20231215 21:19:26.160"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>${inpt_pass_mobile}</arg>
+<arg>12345678</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20231215 21:19:26.163" level="INFO">Typing text '12345678' into text field '//*/android.widget.EditText[4]'</msg>
+<msg timestamp="20231215 21:19:26.185" level="INFO">xpath criteria: //*/android.widget.EditText[4]</msg>
+<status status="PASS" starttime="20231215 21:19:26.161" endtime="20231215 21:19:26.185"/>
+</kw>
+<kw name="Swipe By Percent" library="AppiumLibrary">
+<arg>50</arg>
+<arg>50</arg>
+<arg>50</arg>
+<arg>-400</arg>
+<arg>1000</arg>
+<doc>Swipe from one percent of the screen to another percent, for an optional duration.
+Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
+<status status="PASS" starttime="20231215 21:19:26.185" endtime="20231215 21:19:27.500"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${submit_register}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20231215 21:19:27.502" level="INFO">Clicking element '//android.widget.Button[@content-desc='Register']'.</msg>
+<msg timestamp="20231215 21:19:28.099" level="INFO">xpath criteria: //android.widget.Button[@content-desc='Register']</msg>
+<status status="PASS" starttime="20231215 21:19:27.500" endtime="20231215 21:19:28.099"/>
+</kw>
+<status status="PASS" starttime="20231215 21:19:26.032" endtime="20231215 21:19:28.099"/>
+</kw>
+<kw name="Close All Applications" library="AppiumLibrary">
+<doc>Closes all open applications.</doc>
+<status status="PASS" starttime="20231215 21:19:28.100" endtime="20231215 21:19:28.525"/>
+</kw>
+<status status="PASS" starttime="20231215 21:19:15.835" endtime="20231215 21:19:28.525"/>
+</test>
+<test id="s1-t9" name="User should be able to Register with google" line="59">
+<kw name="Open The Application Mau Kerja" library="general">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${appium_server}</arg>
+<arg>platformName=${android_plat_name}</arg>
+<arg>app=${apk}</arg>
+<arg>appPackage=${app_package}</arg>
+<arg>appActivity=${app_activity}</arg>
+<arg>deviceName=${device_name}</arg>
+<arg>udid=${udid}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" starttime="20231215 21:19:28.526" endtime="20231215 21:19:33.882"/>
+</kw>
+<status status="PASS" starttime="20231215 21:19:28.526" endtime="20231215 21:19:33.882"/>
+</kw>
+<kw name="Click Profile" library="home">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${btn_profile}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231215 21:19:35.915" level="INFO">xpath criteria: //android.view.View[contains(@content-desc ,'Profile')]</msg>
+<status status="PASS" starttime="20231215 21:19:33.883" endtime="20231215 21:19:35.915"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${btn_profile}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20231215 21:19:35.917" level="INFO">Clicking element '//android.view.View[contains(@content-desc ,'Profile')]'.</msg>
+<msg timestamp="20231215 21:19:36.752" level="INFO">xpath criteria: //android.view.View[contains(@content-desc ,'Profile')]</msg>
+<status status="PASS" starttime="20231215 21:19:35.915" endtime="20231215 21:19:36.753"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${btn_login}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231215 21:19:36.796" level="INFO">xpath criteria: //android.widget.Button[@content-desc='Login']</msg>
+<status status="PASS" starttime="20231215 21:19:36.753" endtime="20231215 21:19:36.797"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${btn_register}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231215 21:19:36.824" level="INFO">xpath criteria: //android.widget.Button[@content-desc='Register']</msg>
+<status status="PASS" starttime="20231215 21:19:36.797" endtime="20231215 21:19:36.824"/>
+</kw>
+<status status="PASS" starttime="20231215 21:19:33.882" endtime="20231215 21:19:36.824"/>
+</kw>
+<kw name="Click Button Register" library="home">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${btn_register}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20231215 21:19:36.829" level="INFO">Clicking element '//android.widget.Button[@content-desc='Register']'.</msg>
+<msg timestamp="20231215 21:19:37.902" level="INFO">xpath criteria: //android.widget.Button[@content-desc='Register']</msg>
+<status status="PASS" starttime="20231215 21:19:36.825" endtime="20231215 21:19:37.902"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${txt_register}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231215 21:19:37.953" level="INFO">xpath criteria: //android.view.View[contains(@content-desc ,'Register to Maukerja')]</msg>
+<status status="PASS" starttime="20231215 21:19:37.903" endtime="20231215 21:19:37.953"/>
+</kw>
+<status status="PASS" starttime="20231215 21:19:36.825" endtime="20231215 21:19:37.953"/>
+</kw>
+<kw name="Click Register Google" library="home">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${txt_register}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231215 21:19:37.984" level="INFO">xpath criteria: //android.view.View[contains(@content-desc ,'Register to Maukerja')]</msg>
+<status status="PASS" starttime="20231215 21:19:37.954" endtime="20231215 21:19:37.984"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${login_google}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20231215 21:19:37.986" level="INFO">Clicking element '//android.widget.ImageView[@content-desc='Google']'.</msg>
+<msg timestamp="20231215 21:19:38.047" level="INFO">xpath criteria: //android.widget.ImageView[@content-desc='Google']</msg>
+<status status="PASS" starttime="20231215 21:19:37.984" endtime="20231215 21:19:38.047"/>
+</kw>
+<status status="PASS" starttime="20231215 21:19:37.953" endtime="20231215 21:19:38.047"/>
+</kw>
+<kw name="Close All Applications" library="AppiumLibrary">
+<doc>Closes all open applications.</doc>
+<status status="PASS" starttime="20231215 21:19:38.047" endtime="20231215 21:19:38.489"/>
+</kw>
+<status status="PASS" starttime="20231215 21:19:28.525" endtime="20231215 21:19:38.489"/>
+</test>
+<test id="s1-t10" name="User should be able to Register with facebook" line="65">
+<kw name="Open The Application Mau Kerja" library="general">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${appium_server}</arg>
+<arg>platformName=${android_plat_name}</arg>
+<arg>app=${apk}</arg>
+<arg>appPackage=${app_package}</arg>
+<arg>appActivity=${app_activity}</arg>
+<arg>deviceName=${device_name}</arg>
+<arg>udid=${udid}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" starttime="20231215 21:19:38.490" endtime="20231215 21:19:44.301"/>
+</kw>
+<status status="PASS" starttime="20231215 21:19:38.490" endtime="20231215 21:19:44.301"/>
+</kw>
+<kw name="Click Profile" library="home">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${btn_profile}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231215 21:19:46.267" level="INFO">xpath criteria: //android.view.View[contains(@content-desc ,'Profile')]</msg>
+<status status="PASS" starttime="20231215 21:19:44.302" endtime="20231215 21:19:46.267"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${btn_profile}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20231215 21:19:46.270" level="INFO">Clicking element '//android.view.View[contains(@content-desc ,'Profile')]'.</msg>
+<msg timestamp="20231215 21:19:47.144" level="INFO">xpath criteria: //android.view.View[contains(@content-desc ,'Profile')]</msg>
+<status status="PASS" starttime="20231215 21:19:46.267" endtime="20231215 21:19:47.144"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${btn_login}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231215 21:19:47.197" level="INFO">xpath criteria: //android.widget.Button[@content-desc='Login']</msg>
+<status status="PASS" starttime="20231215 21:19:47.145" endtime="20231215 21:19:47.197"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${btn_register}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231215 21:19:47.230" level="INFO">xpath criteria: //android.widget.Button[@content-desc='Register']</msg>
+<status status="PASS" starttime="20231215 21:19:47.197" endtime="20231215 21:19:47.230"/>
+</kw>
+<status status="PASS" starttime="20231215 21:19:44.301" endtime="20231215 21:19:47.230"/>
+</kw>
+<kw name="Click Button Register" library="home">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${btn_register}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20231215 21:19:47.234" level="INFO">Clicking element '//android.widget.Button[@content-desc='Register']'.</msg>
+<msg timestamp="20231215 21:19:48.402" level="INFO">xpath criteria: //android.widget.Button[@content-desc='Register']</msg>
+<status status="PASS" starttime="20231215 21:19:47.231" endtime="20231215 21:19:48.402"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${txt_register}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231215 21:19:48.488" level="INFO">xpath criteria: //android.view.View[contains(@content-desc ,'Register to Maukerja')]</msg>
+<status status="PASS" starttime="20231215 21:19:48.403" endtime="20231215 21:19:48.488"/>
+</kw>
+<status status="PASS" starttime="20231215 21:19:47.231" endtime="20231215 21:19:48.489"/>
+</kw>
+<kw name="Click Register Facebook" library="home">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${txt_register}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<msg timestamp="20231215 21:19:48.523" level="INFO">xpath criteria: //android.view.View[contains(@content-desc ,'Register to Maukerja')]</msg>
+<status status="PASS" starttime="20231215 21:19:48.489" endtime="20231215 21:19:48.523"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${login_fb}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20231215 21:19:48.525" level="INFO">Clicking element '//android.widget.ImageView[@content-desc='Facebook']'.</msg>
+<msg timestamp="20231215 21:19:48.584" level="INFO">xpath criteria: //android.widget.ImageView[@content-desc='Facebook']</msg>
+<status status="PASS" starttime="20231215 21:19:48.523" endtime="20231215 21:19:48.584"/>
+</kw>
+<status status="PASS" starttime="20231215 21:19:48.489" endtime="20231215 21:19:48.584"/>
+</kw>
+<kw name="Close All Applications" library="AppiumLibrary">
+<doc>Closes all open applications.</doc>
+<status status="PASS" starttime="20231215 21:19:48.584" endtime="20231215 21:19:48.976"/>
+</kw>
+<status status="PASS" starttime="20231215 21:19:38.489" endtime="20231215 21:19:48.977"/>
+</test>
+<status status="PASS" starttime="20231215 21:17:56.005" endtime="20231215 21:19:48.978"/>
+</suite>
+<statistics>
+<total>
+<stat pass="10" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="10" fail="0" skip="0" id="s1" name="Mau-Kerja">Mau-Kerja</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -31,6 +31,9 @@ User should be able to login
     Open The Application Mau Kerja
     Click Profile
     Click Button Login
+    Input Email or Phone
+    Input Password
+    Click Submit Login
     Close All Applications
 
 User should be able to login with google
@@ -45,4 +48,23 @@ User should be able to login with facebook
     Click Profile
     Click Button Login
     Click Login Facebook
+    Close All Applications
+
+User should be able to Register
+    Open The Application Mau Kerja
+    Click Profile
+    Click Button Register
+    Input Data Register
+    Close All Applications
+User should be able to Register with google
+    Open The Application Mau Kerja
+    Click Profile
+    Click Button Register
+    Click Register Google
+    Close All Applications
+User should be able to Register with facebook
+    Open The Application Mau Kerja
+    Click Profile
+    Click Button Register
+    Click Register Facebook
     Close All Applications
