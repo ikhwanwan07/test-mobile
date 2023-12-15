@@ -3,17 +3,12 @@
 ### Dependencies and prerequisites
 ````
 1. install appium
-2. install emulator android / android studio avd
-3. install robot framework
-4. install appium library robot framework
-5. download apk mau-kerja and put in folder data 
-6. after put in apk on folder data , go to data.py and adjust path apk '/Users/ikhwannurhasyim/Documents/Automation/maukerja-mobile/data/mau-kerja.apk'
-
-
-
-
-
-
+2. install python
+3. install emulator android / android studio avd
+4. install robot framework
+5. install appium library robot framework
+6. download apk mau-kerja and put in folder data 
+7. after put in apk on folder data , go to data.py and adjust path apk '/Users/ikhwannurhasyim/Documents/Automation/maukerja-mobile/data/mau-kerja.apk'
 
 
 ````
