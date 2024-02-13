@@ -1,10 +1,10 @@
 appium_server       = "http://127.0.0.1:4723/wd/hub"
 android_plat_name   = "Android"
-app_package         = "my.maukerja.applicant"
-app_activity        = "my.maukerja.applicant.lite.MainActivity"
+app_package         = "com.traveloka.android"
+app_activity        = "com.traveloka.android.appentry.splash.SplashActivity"
 device_name         = "AndroidSDK"
 udid                = "emulator-5554"
-apk                 = '/Users/ikhwannurhasyim/Documents/Automation/maukerja-mobile/data/mau-kerja.apk'
+apk                 = '/Users/ikhwannurhasyim/Documents/Automation/traveloka-mobile/data/traveloka.apk'
 
 
 # data user

@@ -1,4 +1,4 @@
-**Mau Kerja Mobile**
+**Traveloka Mobile**
 ---
 ### Dependencies and prerequisites
 ````
@@ -22,10 +22,12 @@ Clone This repo and install dependencies first
 5. run with this code 
 
 ```
-python3 -m robot.run mau-kerja.robot 
+python3 -m robot.run traveloka.robot 
 ```
 
 6. After that you can see the generate report file html 
+
+download apk in here [link APk](https://drive.google.com/file/d/1zCfXmYYu84kZGUJQ2wwyD18X_0R_wrjO/view?usp=drive_link)
 
 ## Notes 
 
