@@ -13,4 +13,12 @@ Open The Application Traveloka
     ...     appActivity=${app_activity} 
     ...     deviceName=${device_name} 
     ...     udid=${udid} 
-  
+    
+Open The Application wdio
+    Open Application      ${appium_server}
+    ...     platformName=${android_plat_name} 
+    ...     app=${apk1}
+    ...     appPackage=${app_package1}
+    ...     appActivity=${app_activity1} 
+    ...     deviceName=${device_name} 
+    ...     udid=${udid} 
