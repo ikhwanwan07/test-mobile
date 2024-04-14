@@ -27,7 +27,7 @@ python3 -m robot.run traveloka.robot
 
 6. After that you can see the generate report file html 
 
-download apk in here [link APk](https://drive.google.com/file/d/1zCfXmYYu84kZGUJQ2wwyD18X_0R_wrjO/view?usp=drive_link)
+download apk in here [link APk](https://drive.google.com/file/d/1pU6vJBL56yQ65WY4ibilJQWzIuEvkJl9/view?usp=sharing)
 
 ## Notes 
 
